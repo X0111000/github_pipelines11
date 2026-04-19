@@ -9,6 +9,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        
+      - name: Enable Corepack
+        run: corepack enable
+        
       - name: set node version
         uses: actions/setup-node@v4
         with:
